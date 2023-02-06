@@ -4,7 +4,7 @@ import axios from "axios";
 //call pocket api to get request token
 const getRequestToken = async (req, res) => {
   try {
-    const response = await fetch ("https://getpocket.com/v3/oauth/request?redirect_uri=http://www.google.com&consumer_key=105840-0b6d74eed0d3768a1c6ef11", 
+    const response = await fetch ("https://getpocket.com/v3/oauth/request?redirect_uri=http://www.google.com&consumer_key=POCKET_CONSUMER_KEY", 
     {
       method: 'POST',
       headers: {
@@ -20,7 +20,7 @@ const getRequestToken = async (req, res) => {
   }
 }
 
-  // const response = await axios.post("https://getpocket.com/v3/oauth/request?redirect_uri=http://www.google.com&consumer_key=105840-0b6d74eed0d3768a1c6ef11")
+  // const response = await axios.post("https://getpocket.com/v3/oauth/request?redirect_uri=http://www.google.com&consumer_key=POCKET_CONSUMER_KEY")
   //   .then(function(response) {
   //     console.log(response);
   //   })
