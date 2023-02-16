@@ -2,7 +2,7 @@
 export default async function handler(req,res) {
     const { access_token }  = req.query;
     try {
-        const response = await fetch(`https://getpocket.com/v3/get?consumer_key=${process.env.POCKET_CONSUMER_KEY}&access_token=${process.env.ACCESS_TOKEN}&detailType=complete&count=10`, {
+        const response = await fetch(`https://getpocket.com/v3/get?consumer_key=${process.env.POCKET_CONSUMER_KEY}&access_token=${process.env.ACCESS_TOKEN}&detailType=complete&count=50`, {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
